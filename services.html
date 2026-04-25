@@ -1,0 +1,231 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN" data-i18n-lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="services.title">服务支持 - BHTCH</title>
+    <meta name="description" content="BHTCH提供全方位服务支持：售前咨询、全球物流配送、售后服务、技术支持">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 顶部联系栏 -->
+    <div class="top-contact-bar">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-2">
+                <div class="contact-items">
+                    <span><i class="bi bi-telephone-fill"></i> +8613209922368 / +8618167856752</span>
+                    <span class="ms-3"><i class="bi bi-whatsapp"></i> +8613209922368 / +8618167856752</span>
+                </div>
+                <div class="language-selector">
+                    <button class="lang-btn" data-lang="ru">Русский</button>
+                    <span class="lang-divider">|</span>
+                    <button class="lang-btn active" data-lang="zh">中文</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header-main">
+        <div class="container">
+            <div class="d-flex align-items-center py-3">
+                <a class='brand-logo d-flex align-items-center text-decoration-none' href='/'>
+                    <img src="images/logo-baihetiancheng.png" alt="BHTCH" class="logo-bhtc me-3">
+                    <div class="ms-3">
+                        <span class="brand-name">BHTCH</span>
+                        <small class="brand-tagline">工程机械商城</small>
+                    </div>
+                </a>
+                <div class="header-actions ms-auto">
+                    <a class='btn btn-outline-admart' href='/contact'>联系我们</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-admart">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav w-100 justify-content-between">
+                    <li class="nav-item"><a class='nav-link' href='/'><i class="bi bi-house-door"></i> 首页</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="bi bi-grid"></i> 产品分类</a>
+                        <ul class="dropdown-menu">
+                            <li><a class='dropdown-item' href='/products?category=excavator'>挖掘机</a></li>
+                            <li><a class='dropdown-item' href='/products?category=loader'>装载机</a></li>
+                            <li><a class='dropdown-item' href='/products?category=roller'>压路机</a></li>
+                            <li><a class='dropdown-item' href='/products?category=crane'>起重机</a></li>
+                            <li><a class='dropdown-item' href='/products?category=dump'>自卸车</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class='nav-link' href='/products'><i class="bi bi-box-seam"></i> 全部产品</a></li>
+                    <li class="nav-item"><a class='nav-link active' href='/services'><i class="bi bi-headset"></i> 服务支持</a></li>
+                    <li class="nav-item"><a class='nav-link' href='/about'><i class="bi bi-building"></i> 关于我们</a></li>
+                    <li class="nav-item"><a class='nav-link' href='/contact'><i class="bi bi-envelope"></i> 联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 页面标题 -->
+    <div class="page-header">
+        <div class="container">
+            <h1 data-i18n="services.title">服务支持</h1>
+            <p class="lead" data-i18n="services.subtitle">全方位的服务支持，保障您的设备运行</p>
+        </div>
+    </div>
+
+    <!-- 服务项目 -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-person-check"></i></div>
+                        <h3 data-i18n="services.sales.title">售前服务</h3>
+                        <p data-i18n="services.sales.desc">专业团队提供产品咨询、方案定制、技术支持</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-truck"></i></div>
+                        <h3 data-i18n="services.logistics.title">物流配送</h3>
+                        <p data-i18n="services.logistics.desc">覆盖全球的专业物流网络，确保设备安全送达</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-shield-check"></i></div>
+                        <h3 data-i18n="services.warranty.title">质量保证</h3>
+                        <p data-i18n="services.warranty.desc">全程质量监控，完善的售后服务体系</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="service-icon"><i class="bi bi-tools"></i></div>
+                        <h3 data-i18n="services.tech.title">技术支持</h3>
+                        <p data-i18n="services.tech.desc">7×24小时技术支持，随时解答您的疑问</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 服务流程 -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">服务流程</h2>
+            <div class="row g-4 text-center">
+                <div class="col-md-3">
+                    <div class="process-step">
+                        <div class="step-number">01</div>
+                        <div class="step-icon"><i class="bi bi-search"></i></div>
+                        <h4>选择产品</h4>
+                        <p class="text-muted">浏览产品目录，选定所需设备型号</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="process-step">
+                        <div class="step-number">02</div>
+                        <div class="step-icon"><i class="bi bi-chat-dots"></i></div>
+                        <h4>咨询洽谈</h4>
+                        <p class="text-muted">联系我们获取报价和详细信息</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="process-step">
+                        <div class="step-number">03</div>
+                        <div class="step-icon"><i class="bi bi-file-earmark-text"></i></div>
+                        <h4>签订合同</h4>
+                        <p class="text-muted">确认订单，签订购货合同并支付定金</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="process-step">
+                        <div class="step-number">04</div>
+                        <div class="step-icon"><i class="bi bi-box-seam"></i></div>
+                        <h4>交付验收</h4>
+                        <p class="text-muted">物流配送，到货验收，支付尾款</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-5 text-center">
+        <div class="container">
+            <h2>需要帮助？</h2>
+            <p class="text-muted mb-4">我们的专业团队随时为您服务</p>
+            <a class='btn btn-admart btn-lg' href='/contact'>
+                <i class="bi bi-whatsapp me-2"></i>立即联系我们
+            </a>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="footer-brand">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="logo-icon me-2"><i class="bi bi-truck"></i></div>
+                                <span class="brand-name">BHTCH</span>
+                            </div>
+                            <p>专业工程机械供应商，致力于为全球客户提供高品质设备和完善的服务。</p>
+                            <div class="footer-social mt-3">
+                                <a href="#"><i class="bi bi-whatsapp"></i></a>
+                                <a href="#"><i class="bi bi-telegram"></i></a>
+                                <a href="#"><i class="bi bi-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2">
+                        <h5>产品中心</h5>
+                        <ul class="list-unstyled">
+                            <li><a href='/products?category=excavator'>挖掘机</a></li>
+                            <li><a href='/products?category=loader'>装载机</a></li>
+                            <li><a href='/products?category=roller'>压路机</a></li>
+                            <li><a href='/products?category=crane'>起重机</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-2">
+                        <h5>信息</h5>
+                        <ul class="list-unstyled">
+                            <li><a href='/about'>关于我们</a></li>
+                            <li><a href='/services'>服务支持</a></li>
+                            <li><a href='/contact'>联系我们</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5>联系方式</h5>
+                        <ul class="list-unstyled footer-contact">
+                            <li><i class="bi bi-telephone"></i> +8613209922368 / +8618167856752</li>
+                            <li><i class="bi bi-whatsapp"></i> +8613209922368 / +8618167856752</li>
+                            <li><i class="bi bi-envelope"></i> info@admart.kz</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p class="mb-0">© 2026 BHTCH. 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/i18n.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() { i18n.init(); });
+    </script>
+</body>
+</html>
+

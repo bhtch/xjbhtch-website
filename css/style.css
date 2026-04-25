@@ -1,0 +1,1121 @@
+﻿/* ADMart 工程机械网站样式 - 参照 admart.kz 设计 */
+:root {
+    --admart-primary: #0052D4;
+    --admart-secondary: #4364F7;
+    --admart-accent: #6FB1FC;
+    --admart-dark: #1a365d;
+    --admart-light: #f0f4f8;
+    --admart-orange: #f5a623;
+    --admart-success: #38EF7D;
+    --admart-text: #2d3748;
+    --admart-text-light: #718096;
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.12);
+    --shadow-lg: 0 8px 24px rgba(0,0,0,0.16);
+    --radius-sm: 8px;
+    --radius-md: 12px;
+    --radius-lg: 16px;
+}
+
+body {
+    font-family: 'Segoe UI', 'Noto Sans SC', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: var(--admart-text);
+    line-height: 1.6;
+    background: #fff;
+}
+
+/* 顶部联系栏 */
+.top-contact-bar {
+    background: var(--admart-dark);
+    color: #fff;
+    font-size: 14px;
+}
+.contact-items i {
+    margin-right: 6px;
+    color: var(--admart-accent);
+}
+
+/* 语言选择器 */
+.language-selector {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 13px;
+}
+.lang-btn {
+    background: transparent;
+    border: none;
+    color: rgba(255,255,255,0.7);
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 13px;
+}
+.lang-btn:hover, .lang-btn.active {
+    color: #fff;
+    font-weight: 600;
+}
+.lang-divider {
+    color: rgba(255,255,255,0.3);
+}
+
+/* Logo 区域 */
+.header-main {
+    background: #fff;
+    border-bottom: 1px solid #e2e8f0;
+}
+.brand-logo {
+    color: var(--admart-primary);
+}
+.logo-icon {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, var(--admart-primary), var(--admart-secondary));
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+}
+.logo-bhtc {
+    height: 50px;
+    width: auto;
+}
+.brand-name {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--admart-dark);
+    display: block;
+    line-height: 1.2;
+}
+.brand-tagline {
+    color: var(--admart-text-light);
+    font-size: 12px;
+}
+
+/* 搜索框 */
+.search-box {
+    max-width: 500px;
+    width: 100%;
+}
+.search-box .form-control {
+    border: 2px solid #e2e8f0;
+    border-right: none;
+    border-radius: var(--radius-sm) 0 0 var(--radius-sm);
+    padding: 10px 16px;
+    font-size: 14px;
+}
+.search-box .form-control:focus {
+    border-color: var(--admart-primary);
+    box-shadow: none;
+}
+.btn-search {
+    background: var(--admart-primary);
+    color: #fff;
+    border: 2px solid var(--admart-primary);
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    padding: 10px 24px;
+    font-weight: 600;
+}
+.btn-search:hover {
+    background: var(--admart-dark);
+    border-color: var(--admart-dark);
+}
+
+/* 按钮样式 */
+.btn-admart {
+    background: var(--admart-orange);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius-sm);
+    padding: 10px 28px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.btn-admart:hover {
+    background: #e09000;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+.btn-outline-admart {
+    border: 2px solid var(--admart-primary);
+    color: var(--admart-primary);
+    border-radius: var(--radius-sm);
+    padding: 8px 20px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+.btn-outline-admart:hover {
+    background: var(--admart-primary);
+    color: #fff;
+}
+
+/* 主导航 */
+.bg-admart {
+    background: linear-gradient(135deg, var(--admart-primary), var(--admart-secondary));
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255,255,255,0.9);
+    padding: 12px 16px;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #fff;
+    background: rgba(255,255,255,0.1);
+}
+.navbar-dark .navbar-nav .nav-link i {
+    margin-right: 6px;
+}
+
+/* 下拉菜单 */
+.dropdown-menu {
+    border: none;
+    border-radius: var(--radius-sm);
+    box-shadow: var(--shadow-lg);
+    padding: 8px 0;
+}
+.dropdown-item {
+    padding: 10px 20px;
+    color: var(--admart-text);
+    transition: all 0.2s;
+}
+.dropdown-item:hover {
+    background: var(--admart-light);
+    color: var(--admart-primary);
+}
+
+/* 轮播区域 */
+.hero-section {
+    position: relative;
+}
+.hero-slide {
+    min-height: 450px;
+    display: flex;
+    align-items: center;
+    color: white;
+    padding: 60px 0;
+}
+.hero-slide h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+.hero-slide p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.95;
+}
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    background: rgba(0,0,0,0.2);
+    height: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: var(--radius-sm);
+    margin: 0 20px;
+}
+.carousel-indicators {
+    bottom: 30px;
+}
+.carousel-indicators button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 4px;
+}
+
+/* 服务优势 */
+.advantages-section {
+    background: #fff;
+    padding: 40px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+.advantage-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    border-radius: var(--radius-md);
+    transition: all 0.3s;
+}
+.advantage-item:hover {
+    background: var(--admart-light);
+}
+.advantage-icon {
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, var(--admart-primary), var(--admart-secondary));
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 24px;
+    flex-shrink: 0;
+}
+.advantage-text h4 {
+    margin: 0 0 4px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--admart-dark);
+}
+.advantage-text p {
+    margin: 0;
+    font-size: 13px;
+    color: var(--admart-text-light);
+}
+
+/* 区块标题 */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.section-header h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--admart-dark);
+}
+.view-all {
+    color: var(--admart-primary);
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+.view-all:hover {
+    color: var(--admart-dark);
+}
+
+/* 分类卡片 */
+.category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    background: #fff;
+    border-radius: var(--radius-md);
+    text-decoration: none;
+    color: var(--admart-text);
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s;
+    border: 1px solid #e2e8f0;
+    height: 100%;
+}
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--admart-primary);
+    color: var(--admart-primary);
+}
+.category-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--admart-light), #dbeafe);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    font-size: 32px;
+    color: var(--admart-primary);
+    transition: all 0.3s;
+}
+.category-card:hover .category-icon {
+    background: linear-gradient(135deg, var(--admart-primary), var(--admart-secondary));
+    color: #fff;
+}
+.category-card h4 {
+    margin: 0 0 8px;
+    font-size: 15px;
+    font-weight: 600;
+}
+.category-count {
+    font-size: 13px;
+    color: var(--admart-text-light);
+}
+
+/* 产品卡片 */
+.product-card {
+    background: #fff;
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s;
+    border: 1px solid #e2e8f0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--admart-accent);
+}
+.product-card .card-img {
+    position: relative;
+    height: 200px;
+    background: linear-gradient(135deg, #e2e8f0, #f7fafc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.product-card .card-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+.product-card:hover .card-img img {
+    transform: scale(1.05);
+}
+.product-card .card-img i {
+    font-size: 80px;
+    color: #cbd5e0;
+    transition: all 0.3s;
+}
+.product-card:hover .card-img i {
+    transform: scale(1.1);
+    color: var(--admart-accent);
+}
+.product-badge {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background: var(--admart-orange);
+    color: #fff;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.product-card .card-body {
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.product-card .card-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--admart-dark);
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+.product-card .card-text {
+    color: var(--admart-text-light);
+    font-size: 14px;
+    margin-bottom: 12px;
+    flex: 1;
+}
+.product-card .product-price {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--admart-primary);
+    margin-bottom: 12px;
+}
+.product-card .product-price small {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--admart-text-light);
+}
+.product-card .btn {
+    background: var(--admart-primary);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius-sm);
+    padding: 10px 20px;
+    font-weight: 600;
+    transition: all 0.2s;
+}
+.product-card .btn:hover {
+    background: var(--admart-dark);
+}
+
+/* 为什么选择我们 */
+.why-us-section {
+    background: var(--admart-light);
+}
+.why-us-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: var(--radius-lg);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s;
+    height: 100%;
+}
+.why-us-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+.why-us-number {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--admart-primary);
+    opacity: 0.15;
+    margin-bottom: -20px;
+}
+.why-us-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--admart-dark);
+    margin-bottom: 12px;
+}
+.why-us-card p {
+    color: var(--admart-text-light);
+    margin: 0;
+}
+
+/* 订购流程 */
+.order-process {
+    background: linear-gradient(135deg, var(--admart-primary), var(--admart-secondary));
+    color: #fff;
+}
+.order-process h2 {
+    color: #fff;
+}
+.process-step {
+    text-align: center;
+    padding: 20px;
+}
+.step-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 32px;
+    transition: all 0.3s;
+}
+.process-step:hover .step-icon {
+    background: rgba(255,255,255,0.25);
+    transform: scale(1.1);
+}
+.process-step h4 {
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+.process-step p {
+    opacity: 0.85;
+    margin: 0;
+    font-size: 14px;
+}
+
+/* 页脚 */
+.site-footer {
+    background: var(--admart-dark);
+    color: #fff;
+}
+.footer-top {
+    padding: 60px 0 40px;
+}
+.footer-brand .brand-name {
+    color: #fff;
+}
+.footer-brand p {
+    color: rgba(255,255,255,0.7);
+    margin: 0;
+}
+.footer-social {
+    display: flex;
+    gap: 12px;
+}
+.footer-social a {
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.1);
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.2s;
+}
+.footer-social a:hover {
+    background: var(--admart-primary);
+    transform: translateY(-3px);
+}
+.site-footer h5 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.site-footer ul {
+    margin: 0;
+}
+.site-footer ul li {
+    margin-bottom: 10px;
+}
+.site-footer ul a {
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+    transition: all 0.2s;
+}
+.site-footer ul a:hover {
+    color: var(--admart-accent);
+}
+.footer-contact li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.footer-contact i {
+    color: var(--admart-accent);
+    width: 20px;
+}
+.footer-bottom {
+    background: rgba(0,0,0,0.2);
+    padding: 20px 0;
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+}
+.footer-lang .lang-btn {
+    color: rgba(255,255,255,0.7);
+}
+.footer-lang .lang-btn:hover,
+.footer-lang .lang-btn.active {
+    color: #fff;
+}
+
+/* 产品列表页 */
+.filter-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 30px;
+}
+.filter-section .form-select {
+    border: 1px solid #e2e8f0;
+    border-radius: var(--radius-sm);
+    padding: 10px 16px;
+}
+.filter-section .form-select:focus {
+    border-color: var(--admart-primary);
+    box-shadow: 0 0 0 3px rgba(0,82,212,0.1);
+}
+.search-filter {
+    position: relative;
+}
+.search-filter .form-control {
+    border: 1px solid #e2e8f0;
+    border-radius: var(--radius-sm);
+    padding: 10px 16px;
+}
+.search-filter .form-control:focus {
+    border-color: var(--admart-primary);
+    box-shadow: 0 0 0 3px rgba(0,82,212,0.1);
+}
+.search-filter .btn {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    color: var(--admart-text-light);
+}
+
+/* 产品详情页 */
+.product-detail-section {
+    padding: 40px 0;
+}
+.gallery-section {
+    position: sticky;
+    top: 100px;
+}
+.gallery-main {
+    width: 100%;
+    height: 400px;
+    background: linear-gradient(135deg, #e2e8f0, #f7fafc);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+.gallery-main img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.gallery-main i {
+    font-size: 150px;
+    color: #cbd5e0;
+}
+.gallery-thumbs {
+    display: flex;
+    gap: 12px;
+}
+.gallery-thumb {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, #e2e8f0, #f7fafc);
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.2s;
+}
+.gallery-thumb:hover,
+.gallery-thumb.active {
+    border-color: var(--admart-primary);
+}
+.gallery-thumb i {
+    font-size: 30px;
+    color: #cbd5e0;
+}
+.product-info-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+}
+.product-info-card h1 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--admart-dark);
+    margin-bottom: 16px;
+}
+.product-detail-price {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--admart-primary);
+    margin-bottom: 20px;
+}
+.specs-table {
+    width: 100%;
+    margin-bottom: 24px;
+}
+.specs-table tr {
+    border-bottom: 1px solid #e2e8f0;
+}
+.specs-table td {
+    padding: 12px 0;
+}
+.specs-table td:first-child {
+    color: var(--admart-text-light);
+    width: 40%;
+}
+.specs-table td:last-child {
+    font-weight: 500;
+    color: var(--admart-dark);
+}
+.product-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 24px;
+}
+.product-actions .btn {
+    flex: 1;
+    padding: 14px 24px;
+    font-weight: 600;
+    border-radius: var(--radius-sm);
+}
+.btn-contact {
+    background: var(--admart-primary);
+    color: #fff;
+    border: none;
+}
+.btn-contact:hover {
+    background: var(--admart-dark);
+    color: #fff;
+}
+.btn-quote {
+    background: var(--admart-orange);
+    color: #fff;
+    border: none;
+}
+.btn-quote:hover {
+    background: #e09000;
+    color: #fff;
+}
+
+/* 联系页面 */
+.contact-info-card {
+    background: #fff;
+    padding: 30px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    height: 100%;
+}
+.contact-info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid #e2e8f0;
+}
+.contact-info-item:last-child {
+    border-bottom: none;
+}
+.contact-info-item i {
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(135deg, var(--admart-primary), var(--admart-secondary));
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+.contact-info-item h4 {
+    margin: 0 0 4px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--admart-dark);
+}
+.contact-info-item p {
+    margin: 0;
+    color: var(--admart-text-light);
+}
+.contact-form {
+    background: #fff;
+    padding: 30px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+}
+.contact-form h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--admart-dark);
+    margin-bottom: 24px;
+}
+.contact-form .form-control,
+.contact-form .form-select {
+    border: 1px solid #e2e8f0;
+    border-radius: var(--radius-sm);
+    padding: 12px 16px;
+    margin-bottom: 16px;
+}
+.contact-form .form-control:focus,
+.contact-form .form-select:focus {
+    border-color: var(--admart-primary);
+    box-shadow: 0 0 0 3px rgba(0,82,212,0.1);
+}
+.contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+/* 响应式 */
+@media (max-width: 992px) {
+    .search-box {
+        max-width: 300px;
+    }
+    .header-actions {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .top-contact-bar .contact-items span:not(:first-child) {
+        display: none;
+    }
+    .hero-slide h1 {
+        font-size: 1.8rem;
+    }
+    .hero-slide p {
+        font-size: 1rem;
+    }
+    .advantage-item {
+        padding: 12px;
+    }
+    .advantage-icon {
+        width: 48px;
+        height: 48px;
+        font-size: 20px;
+    }
+    .gallery-section {
+        position: static;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 576px) {
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .process-step {
+        padding: 16px;
+    }
+}
+
+/* 页面通用标题区 */
+.page-header {
+    background: linear-gradient(135deg, var(--admart-primary), var(--admart-secondary));
+    color: #fff;
+    padding: 60px 0;
+    margin-bottom: 40px;
+}
+.page-header h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+.page-header .lead {
+    opacity: 0.9;
+    font-size: 1.1rem;
+}
+
+/* 产品列表页 - 筛选卡片 */
+.filter-card {
+    background: #fff;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid #e2e8f0;
+    position: sticky;
+    top: 20px;
+}
+.filter-card h5 {
+    font-weight: 600;
+    color: var(--admart-dark);
+    margin-bottom: 20px;
+}
+.filter-card .form-label {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--admart-text);
+}
+.filter-card .form-select,
+.filter-card .form-control {
+    border: 1px solid #e2e8f0;
+    border-radius: var(--radius-sm);
+    padding: 8px 12px;
+    font-size: 14px;
+}
+.filter-card .form-select:focus,
+.filter-card .form-control:focus {
+    border-color: var(--admart-primary);
+    box-shadow: 0 0 0 3px rgba(0,82,212,0.1);
+}
+
+/* 产品详情 */
+.product-detail-img {
+    background: linear-gradient(135deg, #e2e8f0, #f7fafc);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.product-detail-info h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--admart-dark);
+    margin-bottom: 12px;
+}
+.product-price-lg {
+    background: var(--admart-light);
+    padding: 16px 20px;
+    border-radius: var(--radius-sm);
+}
+.price-label {
+    font-size: 14px;
+    color: var(--admart-text-light);
+}
+.price-value {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--admart-primary);
+    margin-left: 8px;
+}
+.detail-section {
+    background: #fff;
+    padding: 30px;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+}
+.detail-section h4 {
+    font-weight: 600;
+    color: var(--admart-dark);
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--admart-primary);
+}
+
+/* 服务卡片 */
+.service-card {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: var(--radius-lg);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s;
+    height: 100%;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--admart-primary);
+}
+.service-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--admart-primary), var(--admart-secondary));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+    font-size: 36px;
+    color: #fff;
+}
+.service-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--admart-dark);
+    margin-bottom: 12px;
+}
+.service-card p {
+    color: var(--admart-text-light);
+    margin: 0;
+    font-size: 14px;
+}
+
+/* 服务流程编号 */
+.process-step {
+    position: relative;
+}
+.step-number {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--admart-primary);
+    opacity: 0.1;
+    z-index: 0;
+    line-height: 1;
+}
+
+/* 关于页统计 */
+.stats-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.stat-card {
+    background: linear-gradient(135deg, var(--admart-primary), var(--admart-secondary));
+    color: #fff;
+    padding: 30px;
+    border-radius: var(--radius-md);
+    text-align: center;
+    transition: all 0.3s;
+}
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.stat-label {
+    font-size: 14px;
+    opacity: 0.85;
+}
+
+/* 关于页品牌卡片 */
+.brand-card {
+    transition: all 0.3s;
+}
+.brand-card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md) !important;
+}
+
+/* 联系页图标 */
+.contact-icon-wrap {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    background: linear-gradient(135deg, var(--admart-primary), var(--admart-secondary));
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+}
+.contact-detail-list li {
+    padding: 8px 0;
+}
+.contact-detail-list strong {
+    display: block;
+    color: var(--admart-dark);
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+.contact-detail-list p {
+    color: var(--admart-text);
+    font-size: 14px;
+}
+.contact-form-card {
+    background: #fff;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid #e2e8f0;
+}
+.contact-form-card h3 {
+    font-weight: 600;
+    color: var(--admart-dark);
+}
+.contact-form-card .form-control,
+.contact-form-card .form-select {
+    border: 1px solid #e2e8f0;
+    border-radius: var(--radius-sm);
+    padding: 10px 14px;
+}
+.contact-form-card .form-control:focus,
+.contact-form-card .form-select:focus {
+    border-color: var(--admart-primary);
+    box-shadow: 0 0 0 3px rgba(0,82,212,0.1);
+}
+
+/* 面包屑 */
+.breadcrumb {
+    font-size: 14px;
+}
+.breadcrumb-item a {
+    color: var(--admart-primary);
+    text-decoration: none;
+}
+.breadcrumb-item a:hover {
+    text-decoration: underline;
+}
+.breadcrumb-item.active {
+    color: var(--admart-text-light);
+}
+
+/* 动画 */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.fade-in {
+    animation: fadeIn 0.5s ease-out;
+}
+

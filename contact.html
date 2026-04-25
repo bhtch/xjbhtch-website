@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN" data-i18n-lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="contact.title">联系我们 - BHTCH</title>
+    <meta name="description" content="联系BHTCH，获取工程机械产品报价、咨询服务">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="top-contact-bar">
+        <div class="container">
+            <div class="d-flex justify-content-between align-items-center py-2">
+                <div class="contact-items">
+                    <span><i class="bi bi-telephone-fill"></i> +8613209922368 / +8618167856752</span>
+                    <span class="ms-3"><i class="bi bi-whatsapp"></i> +8613209922368 / +8618167856752</span>
+                </div>
+                <div class="language-selector">
+                    <button class="lang-btn" data-lang="ru">Русский</button>
+                    <span class="lang-divider">|</span>
+                    <button class="lang-btn active" data-lang="zh">中文</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="header-main">
+        <div class="container">
+            <div class="d-flex align-items-center py-3">
+                <a class='brand-logo d-flex align-items-center text-decoration-none' href='/'>
+                    <img src="images/logo-baihetiancheng.png" alt="BHTCH" class="logo-bhtc me-3">
+                    <div class="ms-3">
+                        <span class="brand-name">BHTCH</span>
+                        <small class="brand-tagline">工程机械商城</small>
+                    </div>
+                </a>
+                <div class="header-actions ms-auto">
+                    <a class='btn btn-outline-admart' href='/contact'>联系我们</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-admart">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav w-100 justify-content-between">
+                    <li class="nav-item"><a class='nav-link' href='/'><i class="bi bi-house-door"></i> 首页</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="bi bi-grid"></i> 产品分类</a>
+                        <ul class="dropdown-menu">
+                            <li><a class='dropdown-item' href='/products?category=excavator'>挖掘机</a></li>
+                            <li><a class='dropdown-item' href='/products?category=loader'>装载机</a></li>
+                            <li><a class='dropdown-item' href='/products?category=roller'>压路机</a></li>
+                            <li><a class='dropdown-item' href='/products?category=crane'>起重机</a></li>
+                            <li><a class='dropdown-item' href='/products?category=dump'>自卸车</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class='nav-link' href='/products'><i class="bi bi-box-seam"></i> 全部产品</a></li>
+                    <li class="nav-item"><a class='nav-link' href='/services'><i class="bi bi-headset"></i> 服务支持</a></li>
+                    <li class="nav-item"><a class='nav-link' href='/about'><i class="bi bi-building"></i> 关于我们</a></li>
+                    <li class="nav-item"><a class='nav-link active' href='/contact'><i class="bi bi-envelope"></i> 联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <h1 data-i18n="contact.title">联系我们</h1>
+            <p class="lead" data-i18n="contact.subtitle">有任何问题或建议？请随时联系我们</p>
+        </div>
+    </div>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- 联系表单 -->
+                <div class="col-lg-7 mb-4">
+                    <div class="contact-form-card p-4">
+                        <h3 class="mb-4">发送询价</h3>
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label" data-i18n="contact.form.name">您的姓名</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" data-i18n="contact.form.email">电子邮箱</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" data-i18n="contact.form.phone">联系电话</label>
+                                    <input type="tel" class="form-control" id="phone">
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label" data-i18n="contact.form.subject">主题</label>
+                                    <select class="form-select" id="subject">
+                                        <option value="product" data-i18n="contact.form.subject1">产品咨询</option>
+                                        <option value="price" data-i18n="contact.form.subject2">价格报价</option>
+                                        <option value="service" data-i18n="contact.form.subject3">售后服务</option>
+                                        <option value="other" data-i18n="contact.form.subject4">其他</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label" data-i18n="contact.form.message">您的留言</label>
+                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-admart btn-lg w-100">
+                                        <i class="bi bi-whatsapp me-2"></i><span data-i18n="btn.send">发送消息</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- 联系信息 -->
+                <div class="col-lg-5">
+                    <div class="contact-info-card p-4 mb-4">
+                        <h3 class="mb-4" data-i18n="footer.contact.title">联系方式</h3>
+                        <ul class="list-unstyled contact-detail-list">
+                            <li class="mb-4">
+                                <div class="d-flex">
+                                    <div class="contact-icon-wrap me-3"><i class="bi bi-telephone-fill"></i></div>
+                                    <div>
+                                        <strong data-i18n="contact.phone2">电话</strong>
+                                        <p class="mb-0">+8613209922368</p>
+                                        <p class="mb-0">+8618167856752</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-4">
+                                <div class="d-flex">
+                                    <div class="contact-icon-wrap me-3"><i class="bi bi-whatsapp"></i></div>
+                                    <div>
+                                        <strong>WhatsApp</strong>
+                                        <p class="mb-0">+8613209922368</p>
+                                        <p class="mb-0">+8618167856752</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-4">
+                                <div class="d-flex">
+                                    <div class="contact-icon-wrap me-3"><i class="bi bi-envelope-fill"></i></div>
+                                    <div>
+                                        <strong data-i18n="contact.email">邮箱</strong>
+                                        <p class="mb-0">info@admart.kz</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mb-4">
+                                <div class="d-flex">
+                                    <div class="contact-icon-wrap me-3"><i class="bi bi-geo-alt-fill"></i></div>
+                                    <div>
+                                        <strong data-i18n="contact.address">公司地址</strong>
+                                        <p class="mb-0">新疆乌鲁木齐高新区(新市区)中亚北路418号中联润世物流园区项目4号楼1层商业32室</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex">
+                                    <div class="contact-icon-wrap me-3"><i class="bi bi-clock-fill"></i></div>
+                                    <div>
+                                        <strong data-i18n="footer.contact.hours">工作时间</strong>
+                                        <p class="mb-0">周一至周五 09:00-18:00</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- WhatsApp快捷 -->
+                    <div class="text-center">
+                        <a href="https://wa.me/8613209922368" target="_blank" class="btn btn-success btn-lg w-100">
+                            <i class="bi bi-whatsapp me-2"></i>通过 WhatsApp 联系我们
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="footer-brand">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="logo-icon me-2"><i class="bi bi-truck"></i></div>
+                                <span class="brand-name">BHTCH</span>
+                            </div>
+                            <p>专业工程机械供应商，致力于为全球客户提供高品质设备和完善的服务。</p>
+                        </div>
+                    </div>
+                    <div class="col-6 col-lg-2">
+                        <h5>产品中心</h5>
+                        <ul class="list-unstyled">
+                            <li><a href='/products'>全部产品</a></li>
+                            <li><a href='/products?category=excavator'>挖掘机</a></li>
+                            <li><a href='/products?category=loader'>装载机</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-6 col-lg-2">
+                        <h5>信息</h5>
+                        <ul class="list-unstyled">
+                            <li><a href='/about'>关于我们</a></li>
+                            <li><a href='/services'>服务支持</a></li>
+                            <li><a href='/contact'>联系我们</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4">
+                        <h5>联系方式</h5>
+                        <ul class="list-unstyled footer-contact">
+                            <li><i class="bi bi-telephone"></i> +8613209922368 / +8618167856752</li>
+                            <li><i class="bi bi-whatsapp"></i> +8613209922368 / +8618167856752</li>
+                            <li><i class="bi bi-envelope"></i> info@admart.kz</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p class="mb-0">© 2026 BHTCH. 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/i18n.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            i18n.init();
+
+            const form = document.getElementById('contactForm');
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value;
+                const subject = document.getElementById('subject').value;
+                const message = document.getElementById('message').value;
+
+                const whatsappMsg = encodeURIComponent(
+                    `您好，我��${name}。\n\n` +
+                    `邮箱: ${email}\n` +
+                    `电话: ${phone}\n` +
+                    `主题: ${subject}\n\n` +
+                    `留言内容:\n${message}`
+                );
+
+                window.open(`https://wa.me/8613209922368?text=${whatsappMsg}`, '_blank');
+            });
+        });
+    </script>
+</body>
+</html>
+
