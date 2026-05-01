@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN" data-i18n-lang="zh">
 <head>
     <meta charset="UTF-8">
@@ -31,14 +31,14 @@
         <div class="container">
             <div class="d-flex align-items-center py-3">
                 <a class='brand-logo d-flex align-items-center text-decoration-none' href='/'>
-                    <img src="images/logo-baihetiancheng.png" alt="BHTCH" class="logo-bhtc me-3">
+                    <img src="images/logo-baihetiancheng.png" data-i18n-alt="logo.alt" alt="百贺天成" class="logo-bhtc me-3">
                     <div class="ms-3">
-                        <span class="brand-name">BHTCH</span>
-                        <small class="brand-tagline">工程机械商城</small>
+                        <span class="brand-name" data-i18n="logo.name">BHTCH</span>
+                        <small class="brand-tagline" data-i18n="brand.tagline">工程机械商城</small>
                     </div>
                 </a>
                 <div class="header-actions ms-auto">
-                    <a class='btn btn-outline-admart' href='/contact'>联系我们</a>
+                    <a class='btn btn-outline-admart' data-i18n='header.contact' href='/contact'>联系我们</a>
                 </div>
             </div>
         </div>
@@ -51,21 +51,21 @@
             </button>
             <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="navbar-nav w-100 justify-content-between">
-                    <li class="nav-item"><a class='nav-link' href='/'><i class="bi bi-house-door"></i> 首页</a></li>
+                    <li class="nav-item"><a class='nav-link' href='/'><i class="bi bi-house-door"></i> <span data-i18n="nav.home">首页</span></a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="bi bi-grid"></i> 产品分类</a>
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="bi bi-grid"></i> <span data-i18n="nav.categories">产品分类</span></a>
                         <ul class="dropdown-menu">
-                            <li><a class='dropdown-item' href='/products?category=excavator'>挖掘机</a></li>
-                            <li><a class='dropdown-item' href='/products?category=loader'>装载机</a></li>
-                            <li><a class='dropdown-item' href='/products?category=roller'>压路机</a></li>
-                            <li><a class='dropdown-item' href='/products?category=crane'>起重机</a></li>
-                            <li><a class='dropdown-item' href='/products?category=dump'>自卸车</a></li>
+                            <li><a class='dropdown-item' data-i18n='categories.excavator' href='/products?category=excavator'>挖掘机</a></li>
+                            <li><a class='dropdown-item' data-i18n='categories.loader' href='/products?category=loader'>装载机</a></li>
+                            <li><a class='dropdown-item' data-i18n='categories.roller' href='/products?category=roller'>压路机</a></li>
+                            <li><a class='dropdown-item' data-i18n='categories.crane' href='/products?category=crane'>起重机</a></li>
+                            <li><a class='dropdown-item' data-i18n='categories.dump' href='/products?category=dump'>自卸车</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class='nav-link' href='/products'><i class="bi bi-box-seam"></i> 全部产品</a></li>
-                    <li class="nav-item"><a class='nav-link active' href='/services'><i class="bi bi-headset"></i> 服务支持</a></li>
-                    <li class="nav-item"><a class='nav-link' href='/about'><i class="bi bi-building"></i> 关于我们</a></li>
-                    <li class="nav-item"><a class='nav-link' href='/contact'><i class="bi bi-envelope"></i> 联系我们</a></li>
+                    <li class="nav-item"><a class='nav-link' href='/products'><i class="bi bi-box-seam"></i> <span data-i18n="nav.products">全部产品</span></a></li>
+                    <li class="nav-item"><a class='nav-link active' href='/services'><i class="bi bi-headset"></i> <span data-i18n="nav.services">服务支持</span></a></li>
+                    <li class="nav-item"><a class='nav-link' href='/about'><i class="bi bi-building"></i> <span data-i18n="nav.about">关于我们</span></a></li>
+                    <li class="nav-item"><a class='nav-link' href='/contact'><i class="bi bi-envelope"></i> <span data-i18n="nav.contact">联系我们</span></a></li>
                 </ul>
             </div>
         </div>
@@ -118,38 +118,38 @@
     <!-- 服务流程 -->
     <section class="py-5 bg-light">
         <div class="container">
-            <h2 class="text-center mb-5">服务流程</h2>
+            <h2 class="text-center mb-5" data-i18n="services.process">服务流程</h2>
             <div class="row g-4 text-center">
                 <div class="col-md-3">
                     <div class="process-step">
                         <div class="step-number">01</div>
                         <div class="step-icon"><i class="bi bi-search"></i></div>
-                        <h4>选择产品</h4>
-                        <p class="text-muted">浏览产品目录，选定所需设备型号</p>
+                        <h4 data-i18n="services.process.step1">选择产品</h4>
+                        <p class="text-muted" data-i18n="services.process.step1.desc">浏览产品目录，选定所需设备型号</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="process-step">
                         <div class="step-number">02</div>
                         <div class="step-icon"><i class="bi bi-chat-dots"></i></div>
-                        <h4>咨询洽谈</h4>
-                        <p class="text-muted">联系我们获取报价和详细信息</p>
+                        <h4 data-i18n="services.process.step2">咨询洽谈</h4>
+                        <p class="text-muted" data-i18n="services.process.step2.desc">联系我们获取报价和详细信息</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="process-step">
                         <div class="step-number">03</div>
                         <div class="step-icon"><i class="bi bi-file-earmark-text"></i></div>
-                        <h4>签订合同</h4>
-                        <p class="text-muted">确认订单，签订购货合同并支付定金</p>
+                        <h4 data-i18n="services.process.step3">签订合同</h4>
+                        <p class="text-muted" data-i18n="services.process.step3.desc">确认订单，签订购货合同并支付定金</p>
                     </div>
                 </div>
                 <div class="col-md-3">
                     <div class="process-step">
                         <div class="step-number">04</div>
                         <div class="step-icon"><i class="bi bi-box-seam"></i></div>
-                        <h4>交付验收</h4>
-                        <p class="text-muted">物流配送，到货验收，支付尾款</p>
+                        <h4 data-i18n="services.process.step4">交付验收</h4>
+                        <p class="text-muted" data-i18n="services.process.step4.desc">物流配送，到货验收，支付尾款</p>
                     </div>
                 </div>
             </div>
@@ -159,10 +159,10 @@
     <!-- CTA -->
     <section class="py-5 text-center">
         <div class="container">
-            <h2>需要帮助？</h2>
-            <p class="text-muted mb-4">我们的专业团队随时为您服务</p>
+            <h2 data-i18n="services.needHelp">需要帮助？</h2>
+            <p class="text-muted mb-4" data-i18n="services.needHelp.desc">我们的专业团队随时为您服务</p>
             <a class='btn btn-admart btn-lg' href='/contact'>
-                <i class="bi bi-whatsapp me-2"></i>立即联系我们
+                <i class="bi bi-whatsapp me-2"></i><span data-i18n="services.contactNow">立即联系我们</span>
             </a>
         </div>
     </section>
@@ -176,9 +176,9 @@
                         <div class="footer-brand">
                             <div class="d-flex align-items-center mb-3">
                                 <div class="logo-icon me-2"><i class="bi bi-truck"></i></div>
-                                <span class="brand-name">BHTCH</span>
+                                <span class="brand-name" data-i18n="logo.name">BHTCH</span>
                             </div>
-                            <p>专业工程机械供应商，致力于为全球客户提供高品质设备和完善的服务。</p>
+                            <p data-i18n="footer.about">专业工程机械供应商，致力于为全球客户提供高品质设备和完善的服务。</p>
                             <div class="footer-social mt-3">
                                 <a href="#"><i class="bi bi-whatsapp"></i></a>
                                 <a href="#"><i class="bi bi-telegram"></i></a>
@@ -187,24 +187,24 @@
                         </div>
                     </div>
                     <div class="col-6 col-lg-2">
-                        <h5>产品中心</h5>
+                        <h5 data-i18n="footer.products.title">产品中心</h5>
                         <ul class="list-unstyled">
-                            <li><a href='/products?category=excavator'>挖掘机</a></li>
-                            <li><a href='/products?category=loader'>装载机</a></li>
-                            <li><a href='/products?category=roller'>压路机</a></li>
-                            <li><a href='/products?category=crane'>起重机</a></li>
+                            <li><a data-i18n='categories.excavator' href='/products?category=excavator'>挖掘机</a></li>
+                            <li><a data-i18n='categories.loader' href='/products?category=loader'>装载机</a></li>
+                            <li><a data-i18n='categories.roller' href='/products?category=roller'>压路机</a></li>
+                            <li><a data-i18n='categories.crane' href='/products?category=crane'>起重机</a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-lg-2">
-                        <h5>信息</h5>
+                        <h5 data-i18n="footer.info.title">信息</h5>
                         <ul class="list-unstyled">
-                            <li><a href='/about'>关于我们</a></li>
-                            <li><a href='/services'>服务支持</a></li>
-                            <li><a href='/contact'>联系我们</a></li>
+                            <li><a data-i18n='nav.about' href='/about'>关于我们</a></li>
+                            <li><a data-i18n='nav.services' href='/services'>服务支持</a></li>
+                            <li><a data-i18n='nav.contact' href='/contact'>联系我们</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-4">
-                        <h5>联系方式</h5>
+                        <h5 data-i18n="footer.contact.title">联系方式</h5>
                         <ul class="list-unstyled footer-contact">
                             <li><i class="bi bi-telephone"></i> +8613209922368 / +8618167856752</li>
                             <li><i class="bi bi-whatsapp"></i> +8613209922368 / +8618167856752</li>
@@ -216,7 +216,7 @@
         </div>
         <div class="footer-bottom">
             <div class="container text-center">
-                <p class="mb-0">© 2026 BHTCH. 保留所有权利。</p>
+                <p class="mb-0">© 2026 BHTCH. <span data-i18n="footer.copyright">保留所有权利。</span></p>
             </div>
         </div>
     </footer>
@@ -228,4 +228,3 @@
     </script>
 </body>
 </html>
-

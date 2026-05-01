@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN" data-i18n-lang="zh">
 <head>
     <meta charset="UTF-8">
@@ -32,14 +32,14 @@
         <div class="container">
             <div class="d-flex align-items-center py-3">
                 <a class='brand-logo d-flex align-items-center text-decoration-none' href='/'>
-                    <img src="images/logo-baihetiancheng.png" alt="BHTCH" class="logo-bhtc me-3">
+                    <img src="images/logo-baihetiancheng.png" data-i18n-alt="logo.alt" alt="百贺天成" class="logo-bhtc me-3">
                     <div class="ms-3">
-                        <span class="brand-name">BHTCH</span>
-                        <small class="brand-tagline">工程机械商城</small>
+                        <span class="brand-name" data-i18n="logo.name">BHTCH</span>
+                        <small class="brand-tagline" data-i18n="brand.tagline">工程机械商城</small>
                     </div>
                 </a>
                 <div class="header-actions ms-auto">
-                    <a class='btn btn-outline-admart' href='/contact'>联系我们</a>
+                    <a class='btn btn-outline-admart' data-i18n='header.contact' href='/contact'>联系我们</a>
                 </div>
             </div>
         </div>
@@ -52,21 +52,21 @@
             </button>
             <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="navbar-nav w-100 justify-content-between">
-                    <li class="nav-item"><a class='nav-link' href='/'><i class="bi bi-house-door"></i> 首页</a></li>
+                    <li class="nav-item"><a class='nav-link' href='/'><i class="bi bi-house-door"></i> <span data-i18n="nav.home">首页</span></a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="bi bi-grid"></i> 产品分类</a>
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="bi bi-grid"></i> <span data-i18n="nav.categories">产品分类</span></a>
                         <ul class="dropdown-menu">
-                            <li><a class='dropdown-item' href='/products?category=excavator'>挖掘机</a></li>
-                            <li><a class='dropdown-item' href='/products?category=loader'>装载机</a></li>
-                            <li><a class='dropdown-item' href='/products?category=roller'>压路机</a></li>
-                            <li><a class='dropdown-item' href='/products?category=crane'>起重机</a></li>
-                            <li><a class='dropdown-item' href='/products?category=dump'>自卸车</a></li>
+                            <li><a class='dropdown-item' data-i18n='categories.excavator' href='/products?category=excavator'>挖掘机</a></li>
+                            <li><a class='dropdown-item' data-i18n='categories.loader' href='/products?category=loader'>装载机</a></li>
+                            <li><a class='dropdown-item' data-i18n='categories.roller' href='/products?category=roller'>压路机</a></li>
+                            <li><a class='dropdown-item' data-i18n='categories.crane' href='/products?category=crane'>起重机</a></li>
+                            <li><a class='dropdown-item' data-i18n='categories.dump' href='/products?category=dump'>自卸车</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class='nav-link' href='/products'><i class="bi bi-box-seam"></i> 全部产品</a></li>
-                    <li class="nav-item"><a class='nav-link' href='/services'><i class="bi bi-headset"></i> 服务支持</a></li>
-                    <li class="nav-item"><a class='nav-link' href='/about'><i class="bi bi-building"></i> 关于我们</a></li>
-                    <li class="nav-item"><a class='nav-link' href='/contact'><i class="bi bi-envelope"></i> 联系我们</a></li>
+                    <li class="nav-item"><a class='nav-link' href='/products'><i class="bi bi-box-seam"></i> <span data-i18n="nav.products">全部产品</span></a></li>
+                    <li class="nav-item"><a class='nav-link' href='/services'><i class="bi bi-headset"></i> <span data-i18n="nav.services">服务支持</span></a></li>
+                    <li class="nav-item"><a class='nav-link' href='/about'><i class="bi bi-building"></i> <span data-i18n="nav.about">关于我们</span></a></li>
+                    <li class="nav-item"><a class='nav-link' href='/contact'><i class="bi bi-envelope"></i> <span data-i18n="nav.contact">联系我们</span></a></li>
                 </ul>
             </div>
         </div>
@@ -77,8 +77,8 @@
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb mb-0" id="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/">首页</a></li>
-                    <li class="breadcrumb-item"><a href='/products'>全部产品</a></li>
+                    <li class="breadcrumb-item"><a href="/" data-i18n="nav.home.text">首页</a></li>
+                    <li class="breadcrumb-item"><a data-i18n='nav.products' href='/products'>全部产品</a></li>
                     <li class="breadcrumb-item active" id="breadcrumbName">产品详情</li>
                 </ol>
             </nav>
@@ -103,9 +103,9 @@
                         <div class="footer-brand">
                             <div class="d-flex align-items-center mb-3">
                                 <div class="logo-icon me-2"><i class="bi bi-truck"></i></div>
-                                <span class="brand-name">BHTCH</span>
+                                <span class="brand-name" data-i18n="logo.name">BHTCH</span>
                             </div>
-                            <p>专业工程机械供应商，致力于为全球客户提供高品质设备和完善的服务。</p>
+                            <p data-i18n="footer.about">专业工程机械供应商，致力于为全球客户提供高品质设备和完善的服务。</p>
                             <div class="footer-social mt-3">
                                 <a href="#"><i class="bi bi-whatsapp"></i></a>
                                 <a href="#"><i class="bi bi-telegram"></i></a>
@@ -114,30 +114,30 @@
                         </div>
                     </div>
                     <div class="col-6 col-lg-2">
-                        <h5>产品中心</h5>
+                        <h5 data-i18n="footer.products.title">产品中心</h5>
                         <ul class="list-unstyled">
-                            <li><a href='/products?category=excavator'>挖掘机</a></li>
-                            <li><a href='/products?category=loader'>装载机</a></li>
-                            <li><a href='/products?category=roller'>压路机</a></li>
-                            <li><a href='/products?category=crane'>起重机</a></li>
+                            <li><a data-i18n='categories.excavator' href='/products?category=excavator'>挖掘机</a></li>
+                            <li><a data-i18n='categories.loader' href='/products?category=loader'>装载机</a></li>
+                            <li><a data-i18n='categories.roller' href='/products?category=roller'>压路机</a></li>
+                            <li><a data-i18n='categories.crane' href='/products?category=crane'>起重机</a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-lg-2">
-                        <h5>信息</h5>
+                        <h5 data-i18n="footer.info.title">信息</h5>
                         <ul class="list-unstyled">
-                            <li><a href='/about'>关于我们</a></li>
-                            <li><a href='/services'>服务支持</a></li>
-                            <li><a href='/contact'>联系我们</a></li>
+                            <li><a data-i18n='nav.about' href='/about'>关于我们</a></li>
+                            <li><a data-i18n='nav.services' href='/services'>服务支持</a></li>
+                            <li><a data-i18n='nav.contact' href='/contact'>联系我们</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-4">
-                        <h5>联系方式</h5>
+                        <h5 data-i18n="footer.contact.title">联系方式</h5>
                         <ul class="list-unstyled footer-contact">
-                            <li><i class="bi bi-geo-alt"></i> <span>新疆乌鲁木齐高新区(新市区)中亚北路418号中联润世物流园区项目4号楼1层商业32室</span></li>
+                            <li><i class="bi bi-geo-alt"></i> <span data-i18n="footer.contact.address">新疆乌鲁木齐高新区(新市区)中亚北路418号中联润世物流园区项目4号楼1层商业32室</span></li>
                             <li><i class="bi bi-telephone"></i> +8613209922368 / +8618167856752</li>
                             <li><i class="bi bi-whatsapp"></i> +8613209922368 / +8618167856752</li>
                             <li><i class="bi bi-envelope"></i> info@admart.kz</li>
-                            <li><i class="bi bi-clock"></i> 周一至周五 09:00-18:00</li>
+                            <li><i class="bi bi-clock"></i> <span data-i18n="footer.contact.hours">周一至周五 09:00-18:00</span></li>
                         </ul>
                     </div>
                 </div>
@@ -146,8 +146,9 @@
         <div class="footer-bottom">
             <div class="container">
                 <div class="d-flex flex-column flex-md-row justify-content-between align-items-center">
-                    <p class="mb-2 mb-md-0">© 2026 BHTCH. 保留所有权利。</p>
+                    <p class="mb-2 mb-md-0">© 2026 BHTCH. <span data-i18n="footer.copyright">保留所有权利。</span></p>
                     <div class="language-selector footer-lang">
+                        <span data-i18n="footer.lang">语言：</span>
                         <button class="lang-btn" data-lang="ru">Русский</button>
                         <span class="lang-divider">|</span>
                         <button class="lang-btn active" data-lang="zh">中文</button>
@@ -171,7 +172,7 @@
             const product = products.find(p => p.id === productId);
 
             if (!product) {
-                document.getElementById('productDetail').innerHTML = '<div class="text-center py-5"><h3>未找到该产品</h3><a href="products.html" class="btn btn-admart mt-3">返回产品列表</a></div>';
+                document.getElementById('productDetail').innerHTML = '<div class="text-center py-5"><h3>' + i18n.t('error.noProducts') + '</h3><a href="products.html" class="btn btn-admart mt-3">' + i18n.t('products.viewAll') + '</a></div>';
                 return;
             }
 
@@ -194,7 +195,7 @@
                     </div>
                     <div class="col-lg-6">
                         <div class="product-detail-info">
-                            ${product.hot ? '<span class="badge bg-danger mb-2">' + (lang === 'zh' ? '热门产品' : 'Хит продаж') + '</span>' : ''}
+                            ${product.hot ? '<span class="badge bg-danger mb-2">' + i18n.t('products.hot') + '</span>' : ''}
                             <h2>${product.name[lang]}</h2>
                             <p class="text-muted">${product.description[lang]}</p>
                             <div class="product-price-lg mb-4">
@@ -221,7 +222,7 @@
                                 <tbody>
                                     <tr><th width="35%">${i18n.t('product.weight')}</th><td>${specs.weight}</td></tr>
                                     <tr><th>${i18n.t('product.engine')}</th><td>${specs.engine}</td></tr>
-                                    <tr><th>${lang === 'zh' ? '铲斗容量' : 'Ёмкость ковша'}</th><td>${specs.bucket}</td></tr>
+                                    <tr><th>${i18n.t('product.bucket')}</th><td>${specs.bucket}</td></tr>
                                     <tr><th>${i18n.t('product.dimension')}</th><td>${specs.dimension}</td></tr>
                                 </tbody>
                             </table>
@@ -274,4 +275,3 @@
     </script>
 </body>
 </html>
-

@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="zh-CN" data-i18n-lang="zh">
 <head>
     <meta charset="UTF-8">
@@ -30,14 +30,14 @@
         <div class="container">
             <div class="d-flex align-items-center py-3">
                 <a class='brand-logo d-flex align-items-center text-decoration-none' href='/'>
-                    <img src="images/logo-baihetiancheng.png" alt="BHTCH" class="logo-bhtc me-3">
+                    <img src="images/logo-baihetiancheng.png" data-i18n-alt="logo.alt" alt="百贺天成" class="logo-bhtc me-3">
                     <div class="ms-3">
-                        <span class="brand-name">BHTCH</span>
-                        <small class="brand-tagline">工程机械商城</small>
+                        <span class="brand-name" data-i18n="logo.name">BHTCH</span>
+                        <small class="brand-tagline" data-i18n="brand.tagline">工程机械商城</small>
                     </div>
                 </a>
                 <div class="header-actions ms-auto">
-                    <a class='btn btn-outline-admart' href='/contact'>联系我们</a>
+                    <a class='btn btn-outline-admart' data-i18n='header.contact' href='/contact'>联系我们</a>
                 </div>
             </div>
         </div>
@@ -50,21 +50,21 @@
             </button>
             <div class="collapse navbar-collapse" id="mainNav">
                 <ul class="navbar-nav w-100 justify-content-between">
-                    <li class="nav-item"><a class='nav-link' href='/'><i class="bi bi-house-door"></i> 首页</a></li>
+                    <li class="nav-item"><a class='nav-link' href='/'><i class="bi bi-house-door"></i> <span data-i18n="nav.home">首页</span></a></li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="bi bi-grid"></i> 产品分类</a>
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"><i class="bi bi-grid"></i> <span data-i18n="nav.categories">产品分类</span></a>
                         <ul class="dropdown-menu">
-                            <li><a class='dropdown-item' href='/products?category=excavator'>挖掘机</a></li>
-                            <li><a class='dropdown-item' href='/products?category=loader'>装载机</a></li>
-                            <li><a class='dropdown-item' href='/products?category=roller'>压路机</a></li>
-                            <li><a class='dropdown-item' href='/products?category=crane'>起重机</a></li>
-                            <li><a class='dropdown-item' href='/products?category=dump'>自卸车</a></li>
+                            <li><a class='dropdown-item' data-i18n='categories.excavator' href='/products?category=excavator'>挖掘机</a></li>
+                            <li><a class='dropdown-item' data-i18n='categories.loader' href='/products?category=loader'>装载机</a></li>
+                            <li><a class='dropdown-item' data-i18n='categories.roller' href='/products?category=roller'>压路机</a></li>
+                            <li><a class='dropdown-item' data-i18n='categories.crane' href='/products?category=crane'>起重机</a></li>
+                            <li><a class='dropdown-item' data-i18n='categories.dump' href='/products?category=dump'>自卸车</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class='nav-link' href='/products'><i class="bi bi-box-seam"></i> 全部产品</a></li>
-                    <li class="nav-item"><a class='nav-link' href='/services'><i class="bi bi-headset"></i> 服务支持</a></li>
-                    <li class="nav-item"><a class='nav-link' href='/about'><i class="bi bi-building"></i> 关于我们</a></li>
-                    <li class="nav-item"><a class='nav-link active' href='/contact'><i class="bi bi-envelope"></i> 联系我们</a></li>
+                    <li class="nav-item"><a class='nav-link' href='/products'><i class="bi bi-box-seam"></i> <span data-i18n="nav.products">全部产品</span></a></li>
+                    <li class="nav-item"><a class='nav-link' href='/services'><i class="bi bi-headset"></i> <span data-i18n="nav.services">服务支持</span></a></li>
+                    <li class="nav-item"><a class='nav-link' href='/about'><i class="bi bi-building"></i> <span data-i18n="nav.about">关于我们</span></a></li>
+                    <li class="nav-item"><a class='nav-link active' href='/contact'><i class="bi bi-envelope"></i> <span data-i18n="nav.contact">联系我们</span></a></li>
                 </ul>
             </div>
         </div>
@@ -83,7 +83,7 @@
                 <!-- 联系表单 -->
                 <div class="col-lg-7 mb-4">
                     <div class="contact-form-card p-4">
-                        <h3 class="mb-4">发送询价</h3>
+                        <h3 class="mb-4" data-i18n="contact.sendInquiry">发送询价</h3>
                         <form id="contactForm">
                             <div class="row g-3">
                                 <div class="col-md-6">
@@ -140,7 +140,7 @@
                                 <div class="d-flex">
                                     <div class="contact-icon-wrap me-3"><i class="bi bi-whatsapp"></i></div>
                                     <div>
-                                        <strong>WhatsApp</strong>
+                                        <strong data-i18n="contact.whatsapp">WhatsApp</strong>
                                         <p class="mb-0">+8613209922368</p>
                                         <p class="mb-0">+8618167856752</p>
                                     </div>
@@ -160,7 +160,7 @@
                                     <div class="contact-icon-wrap me-3"><i class="bi bi-geo-alt-fill"></i></div>
                                     <div>
                                         <strong data-i18n="contact.address">公司地址</strong>
-                                        <p class="mb-0">新疆乌鲁木齐高新区(新市区)中亚北路418号中联润世物流园区项目4号楼1层商业32室</p>
+                                        <p class="mb-0" data-i18n="contact.address.china">新疆乌鲁木齐高新区(新市区)中亚北路418号中联润世物流园区项目4号楼1层商业32室</p>
                                     </div>
                                 </div>
                             </li>
@@ -168,8 +168,8 @@
                                 <div class="d-flex">
                                     <div class="contact-icon-wrap me-3"><i class="bi bi-clock-fill"></i></div>
                                     <div>
-                                        <strong data-i18n="footer.contact.hours">工作时间</strong>
-                                        <p class="mb-0">周一至周五 09:00-18:00</p>
+                                        <strong data-i18n="contact.workHours">工作时间</strong>
+                                        <p class="mb-0" data-i18n="footer.contact.hours">周一至周五 09:00-18:00</p>
                                     </div>
                                 </div>
                             </li>
@@ -179,7 +179,7 @@
                     <!-- WhatsApp快捷 -->
                     <div class="text-center">
                         <a href="https://wa.me/8613209922368" target="_blank" class="btn btn-success btn-lg w-100">
-                            <i class="bi bi-whatsapp me-2"></i>通过 WhatsApp 联系我们
+                            <i class="bi bi-whatsapp me-2"></i><span data-i18n="contact.viaWhatsapp">通过 WhatsApp 联系我们</span>
                         </a>
                     </div>
                 </div>
@@ -195,29 +195,29 @@
                         <div class="footer-brand">
                             <div class="d-flex align-items-center mb-3">
                                 <div class="logo-icon me-2"><i class="bi bi-truck"></i></div>
-                                <span class="brand-name">BHTCH</span>
+                                <span class="brand-name" data-i18n="logo.name">BHTCH</span>
                             </div>
-                            <p>专业工程机械供应商，致力于为全球客户提供高品质设备和完善的服务。</p>
+                            <p data-i18n="footer.about">专业工程机械供应商，致力于为全球客户提供高品质设备和完善的服务。</p>
                         </div>
                     </div>
                     <div class="col-6 col-lg-2">
-                        <h5>产品中心</h5>
+                        <h5 data-i18n="footer.products.title">产品中心</h5>
                         <ul class="list-unstyled">
-                            <li><a href='/products'>全部产品</a></li>
-                            <li><a href='/products?category=excavator'>挖掘机</a></li>
-                            <li><a href='/products?category=loader'>装载机</a></li>
+                            <li><a data-i18n='footer.allProducts' href='/products'>全部产品</a></li>
+                            <li><a data-i18n='categories.excavator' href='/products?category=excavator'>挖掘机</a></li>
+                            <li><a data-i18n='categories.loader' href='/products?category=loader'>装载机</a></li>
                         </ul>
                     </div>
                     <div class="col-6 col-lg-2">
-                        <h5>信息</h5>
+                        <h5 data-i18n="footer.info.title">信息</h5>
                         <ul class="list-unstyled">
-                            <li><a href='/about'>关于我们</a></li>
-                            <li><a href='/services'>服务支持</a></li>
-                            <li><a href='/contact'>联系我们</a></li>
+                            <li><a data-i18n='nav.about' href='/about'>关于我们</a></li>
+                            <li><a data-i18n='nav.services' href='/services'>服务支持</a></li>
+                            <li><a data-i18n='nav.contact' href='/contact'>联系我们</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-4">
-                        <h5>联系方式</h5>
+                        <h5 data-i18n="footer.contact.title">联系方式</h5>
                         <ul class="list-unstyled footer-contact">
                             <li><i class="bi bi-telephone"></i> +8613209922368 / +8618167856752</li>
                             <li><i class="bi bi-whatsapp"></i> +8613209922368 / +8618167856752</li>
@@ -229,7 +229,7 @@
         </div>
         <div class="footer-bottom">
             <div class="container text-center">
-                <p class="mb-0">© 2026 BHTCH. 保留所有权利。</p>
+                <p class="mb-0">© 2026 BHTCH. <span data-i18n="footer.copyright">保留所有权利。</span></p>
             </div>
         </div>
     </footer>
@@ -250,11 +250,11 @@
                 const message = document.getElementById('message').value;
 
                 const whatsappMsg = encodeURIComponent(
-                    `您好，我��${name}。\n\n` +
-                    `邮箱: ${email}\n` +
-                    `电话: ${phone}\n` +
-                    `主题: ${subject}\n\n` +
-                    `留言内容:\n${message}`
+                    `Здравствуйте, меня зовут ${name}.\n\n` +
+                    `Email: ${email}\n` +
+                    `Телефон: ${phone}\n` +
+                    `Тема: ${subject}\n\n` +
+                    `Сообщение:\n${message}`
                 );
 
                 window.open(`https://wa.me/8613209922368?text=${whatsappMsg}`, '_blank');
@@ -263,4 +263,3 @@
     </script>
 </body>
 </html>
-

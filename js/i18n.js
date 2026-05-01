@@ -169,7 +169,60 @@ const translations = {
         'products.resetFilter': '重置筛选',
         'products.count': '共 {n} 款产品',
         'products.grader': '平地机',
-        'filter.sort.label': '排序方式'
+        'filter.sort.label': '排序方式',
+
+        // Logo和品牌
+        'logo.alt': '百贺天成',
+        'logo.name': 'BHTCH',
+
+        // 顶部栏
+        'topbar.phone': '电话',
+        'topbar.whatsapp': 'WhatsApp',
+
+        // 页脚链接
+        'footer.allProducts': '全部产品',
+        'footer.warranty': '质量保证',
+
+        // 关于页面
+        'about.bhtch.title': '关于 BHTCH',
+        'about.bhtch.p1': 'BHTCH是一家专业从事工程机械进出口贸易的企业，致力于为全球客户提供高品质的工程机械设备和完善的售后服务。',
+        'about.bhtch.p2': '公司位于中国新疆乌鲁木齐，依托新疆独特的地理优势和"一带一路"政策，业务覆盖中亚、俄罗斯、中东、非洲等多个国家和地区。',
+        'about.bhtch.p3': '我们代理销售柳工、国机、徐工等国内知名品牌的工程机械设备，产品涵盖挖掘机、装载机、压路机、起重机、自卸车等多个品类。',
+        'about.brands': '合作品牌',
+        'about.stats.year': '年行业经验',
+        'about.stats.countries': '服务国家地区',
+        'about.stats.clients': '合作客户',
+        'about.stats.models': '款产品型号',
+
+        // 品牌名称
+        'brand.liugong': '柳工',
+        'brand.sinomach': '国机',
+        'brand.shanqi': '陕汽',
+        'brand.xcmg': '徐工',
+
+        // 联系页面
+        'contact.sendInquiry': '发送询价',
+        'contact.whatsapp': 'WhatsApp',
+        'contact.viaWhatsapp': '通过 WhatsApp 联系我们',
+        'contact.workHours': '工作时间',
+        'contact.address.china': '新疆乌鲁木齐高新区(新市区)中亚北路418号中联润世物流园区项目4号楼1层商业32室',
+
+        // 服务页面
+        'services.process': '服务流程',
+        'services.process.step1': '选择产品',
+        'services.process.step1.desc': '浏览产品目录，选定所需设备型号',
+        'services.process.step2': '咨询洽谈',
+        'services.process.step2.desc': '联系我们获取报价和详细信息',
+        'services.process.step3': '签订合同',
+        'services.process.step3.desc': '确认订单，签订购货合同并支付定金',
+        'services.process.step4': '交付验收',
+        'services.process.step4.desc': '物流配送，到货验收，支付尾款',
+        'services.needHelp': '需要帮助？',
+        'services.needHelp.desc': '我们的专业团队随时为您服务',
+        'services.contactNow': '立即联系我们',
+
+        // 导航（重复键值确保所有页面可用）
+        'nav.home.text': '首页'
     },
     ru: {
         // 网站信息
@@ -340,7 +393,60 @@ const translations = {
         'products.resetFilter': 'Сбросить фильтр',
         'products.count': 'Всего {n} товаров',
         'products.grader': 'Грейдер',
-        'filter.sort.label': 'Сортировка'
+        'filter.sort.label': 'Сортировка',
+
+        // Logo和品牌
+        'logo.alt': 'Байхэ Тяньчэн',
+        'logo.name': 'BHTCH',
+
+        // 顶部栏
+        'topbar.phone': 'Телефон',
+        'topbar.whatsapp': 'WhatsApp',
+
+        // 页脚链接
+        'footer.allProducts': 'Все товары',
+        'footer.warranty': 'Гарантия качества',
+
+        // 关于页面
+        'about.bhtch.title': 'О BHTCH',
+        'about.bhtch.p1': 'BHTCH - профессиональная компания по экспорту и импорту строительной техники, предоставляющая клиентам по всему миру качественное оборудование и полный сервис.',
+        'about.bhtch.p2': 'Компания расположена в Урумчи, Китай. Благодаря уникальному географическому преимуществу и политике "Один пояс - один путь", бизнес охватывает Центральную Азию, Россию, Ближний Восток, Африку и другие регионы.',
+        'about.bhtch.p3': 'Мы являемся агентами известных китайских брендов строительной техники: LiuGong, SINOMACH, XCMG и других. Продукция включает экскаваторы, погрузчики, катки, краны, самосвалы и другое оборудование.',
+        'about.brands': 'Партнёры',
+        'about.stats.year': 'Лет опыта',
+        'about.stats.countries': 'Стран обслуживания',
+        'about.stats.clients': 'Клиентов',
+        'about.stats.models': 'Моделей',
+
+        // 品牌名称
+        'brand.liugong': 'LiuGong',
+        'brand.sinomach': 'SINOMACH',
+        'brand.shanqi': 'SAGMOTO',
+        'brand.xcmg': 'XCMG',
+
+        // 联系页面
+        'contact.sendInquiry': 'Отправить запрос',
+        'contact.whatsapp': 'WhatsApp',
+        'contact.viaWhatsapp': 'Связаться через WhatsApp',
+        'contact.workHours': 'Часы работы',
+        'contact.address.china': 'Урумчи, Китай, Синьцзян',
+
+        // 服务页面
+        'services.process': 'Процесс обслуживания',
+        'services.process.step1': 'Выбор товара',
+        'services.process.step1.desc': 'Просмотрите каталог и выберите оборудование',
+        'services.process.step2': 'Консультация',
+        'services.process.step2.desc': 'Свяжитесь с нами для расчёта',
+        'services.process.step3': 'Оформление',
+        'services.process.step3.desc': 'Подтвердите заказ и оплатите',
+        'services.process.step4': 'Доставка',
+        'services.process.step4.desc': 'Доставка, приёмка и оплата',
+        'services.needHelp': 'Нужна помощь?',
+        'services.needHelp.desc': 'Наша команда всегда готова помочь',
+        'services.contactNow': 'Связаться с нами',
+
+        // 导航
+        'nav.home.text': 'Главная'
     }
 };
 
@@ -379,6 +485,14 @@ class I18n {
             const key = el.getAttribute('data-i18n-placeholder');
             if (translations[this.currentLang][key]) {
                 el.placeholder = translations[this.currentLang][key];
+            }
+        });
+
+        // 翻译所有带 data-i18n-alt 的元素（图片alt属性）
+        document.querySelectorAll('[data-i18n-alt]').forEach(el => {
+            const key = el.getAttribute('data-i18n-alt');
+            if (translations[this.currentLang][key]) {
+                el.alt = translations[this.currentLang][key];
             }
         });
     }
